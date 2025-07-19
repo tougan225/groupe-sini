@@ -9,12 +9,12 @@ export function ContactSection() {
     {
       icon: <Phone className="h-5 w-5" />,
       title: "Téléphone",
-      details: ["06 28 25 60 85", "06 28 25 60 85"]
+      details: ["06 28 25 60 85"]
     },
     {
       icon: <Mail className="h-5 w-5" />,
       title: "Email",
-      details: ["contact@groupesini.com", "contact@groupesini.com"]
+      details: ["contact@groupesini.com"]
     },
     {
       icon: <MapPin className="h-5 w-5" />,
@@ -41,35 +41,11 @@ export function ContactSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <Card className="shadow-elegant">
-            <CardHeader>
-              <CardTitle className="text-xl text-primary">Demande de devis</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="grid md:grid-cols-2 gap-4">
-                <Input placeholder="Nom" />
-                <Input placeholder="Prénom" />
-              </div>
-              <Input placeholder="Email" type="email" />
-              <Input placeholder="Téléphone" type="tel" />
-              <Input placeholder="Sujet" />
-              <Textarea 
-                placeholder="Décrivez votre projet ou vos besoins..." 
-                className="min-h-[120px]"
-              />
-              <Button className="w-full bg-accent hover:bg-accent/90">
-                Envoyer ma demande
-              </Button>
-            </CardContent>
-          </Card>
-
-          {/* Contact Information */}
-          <div className="space-y-6">
+        <div className="flex justify-center">
+          <div className="space-y-6 w-full max-w-md">
             {contactInfo.map((info, index) => (
               <Card key={index} className="shadow-elegant hover:shadow-hover transition-smooth">
-                <CardContent className="p-6 flex items-start space-x-4">
+                <CardContent className="p-6 flex items-start space-x-6">
                   <div className="flex-shrink-0 text-accent">
                     {info.icon}
                   </div>

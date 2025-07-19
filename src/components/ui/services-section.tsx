@@ -2,6 +2,7 @@ import { ServiceCard } from "@/components/ui/service-card";
 import cleaningImage from "@/assets/service-cleaning.jpg";
 import landscapingImage from "@/assets/service-landscaping.jpg";
 import flexImage from "@/assets/service-flex.jpg";
+import AssainissementImage from "@/assets/assainissement.png";
 
 export function ServicesSection() {
   const services = [
@@ -28,6 +29,17 @@ export function ServicesSection() {
       ]
     },
     {
+      title: "Assainissement",
+      description: "Nettoyage, entretien et débouchage de vos canalisations avec des méthodes respectueuses de l'environnement.",
+      image: AssainissementImage,
+      features: [
+        "Pompage et curage",
+        "Débouchage haute pression",
+        "Inspection caméra",
+        "Entretien préventif"
+      ]
+    },  
+    {
       title: "Services flexibles",
       description: "Solutions sur mesure qui s'adaptent à vos besoins spécifiques et à votre planning.",
       image: flexImage,
@@ -53,7 +65,7 @@ export function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

@@ -13,10 +13,11 @@ export function Navigation({ className }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "À propos", href: "#about" },
-    { label: "Services", href: "#services" },
+    { label: "À propos", href: "/about" },
+     { label: "Le Groupe", href: "/groupe" },
+    { label: "Services", href: "/services" },
     { label: "Actualités", href: "/actualites" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (

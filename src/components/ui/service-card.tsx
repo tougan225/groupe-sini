@@ -34,10 +34,14 @@ export function ServiceCard({ title, description, image, features }: ServiceCard
           ))}
         </ul>
         
-        <Button variant="outline" className="w-full group-hover:bg-accent group-hover:text-white transition-smooth">
-          En savoir plus
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
+        <a href="/services">
+          <Button size="lg" className="bg-accent hover:bg-accent/90 group">
+            <span className="flex items-center">
+              En savoir plus
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </span>
+          </Button>
+        </a>
       </CardContent>
     </Card>
   );

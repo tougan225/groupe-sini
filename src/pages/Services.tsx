@@ -4,9 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Sparkles, CheckCircle, Award } from "lucide-react";
 import cleaningImage from "@/assets/service-cleaning.jpg";
 import landscapingImage from "@/assets/service-landscaping.jpg";
+import AssainissementImage from "@/assets/assainissement.png";
 import flexImage from "@/assets/service-flex.jpg";
+import { Navigation } from "@/components/ui/navigation";
+import { Footer } from "@/components/ui/footer";
 
-export function DiscoverServicesSection() {
+export function Services() {
   const mainServices = [
     {
       title: "Nettoyage professionnel",
@@ -21,6 +24,13 @@ export function DiscoverServicesSection() {
       image: landscapingImage,
       features: ["Aménagement paysager", "Entretien jardins", "Élagage", "Arrosage automatique"],
       highlight: "Devis paysager gratuit avec visite sur site"
+    },
+    {
+      title: "Service d’assainissement",
+      description: "Interventions rapides et efficaces pour l’entretien, le nettoyage et le débouchage de vos canalisations.",
+      image: AssainissementImage,
+      features: ["Pompage et curage", "Débouchage haute pression", "Inspection caméra", "Interventions d'urgence"],
+      highlight: "Devis d’assainissement gratuit avec visite sur site"
     },
     {
       title: "Services sur mesure",
@@ -39,6 +49,9 @@ export function DiscoverServicesSection() {
   ];
 
   return (
+    <div className="min-h-screen">
+      <Navigation />  
+
     <section className="py-20 bg-gradient-to-br from-secondary/20 to-accent/5">
       <div className="container mx-auto px-4">
         {/* Header */}
@@ -101,11 +114,6 @@ export function DiscoverServicesSection() {
                     </div>
                   ))}
                 </div>
-
-                <Button size="lg" className="bg-accent hover:bg-accent/90 group">
-                  En savoir plus
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
               </div>
             </div>
           ))}
@@ -152,5 +160,8 @@ export function DiscoverServicesSection() {
         </Card>
       </div>
     </section>
+
+          <Footer />
+        </div>
   );
 }

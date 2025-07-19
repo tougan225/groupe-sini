@@ -51,7 +51,13 @@ export default function DevisGratuit() {
       name: "Services flexibles",
       description: "Solutions sur mesure adaptées",
       icon: "⚡"
-    }
+    },
+    {
+    id: "assainissement",
+    name: "Assainissement",
+    description: "Pompage, curage et entretien des réseaux et fosses",
+    icon: "🚰"
+  }
   ];
 
   const handleServiceToggle = (serviceId: string) => {
@@ -71,13 +77,7 @@ export default function DevisGratuit() {
       
       {/* Hero Section */}
       <section className="pt-24 pb-12 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center mb-6">
-            <Button variant="ghost" className="mr-4" onClick={() => window.history.back()}>
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Retour
-            </Button>
-          </div>
+        <div className="container mx-auto px-4"><br /><br />
           <div className="max-w-3xl">
             <a href="/devis-gratuit">
               <h1 className="text-4xl font-bold text-primary mb-4">
@@ -268,7 +268,7 @@ export default function DevisGratuit() {
 
                   <div>
                     <label className="block text-sm font-medium mb-2">Téléphone *</label>
-                    <Input type="tel" placeholder="01 23 45 67 89" required />
+                    <Input type="tel" placeholder="06 28 25 60 85" required />
                   </div>
 
                   <div>
@@ -327,7 +327,7 @@ export default function DevisGratuit() {
               <CardContent className="p-6">
                 <Phone className="h-8 w-8 text-accent mx-auto mb-4" />
                 <h3 className="font-semibold text-primary mb-2">Appelez-nous</h3>
-                <p className="text-muted-foreground">01 23 45 67 89</p>
+                <p className="text-muted-foreground">06 28 25 60 85</p>
                 <p className="text-sm text-muted-foreground">Lun-Ven: 8h-18h</p>
               </CardContent>
             </Card>
@@ -336,7 +336,7 @@ export default function DevisGratuit() {
               <CardContent className="p-6">
                 <Mail className="h-8 w-8 text-accent mx-auto mb-4" />
                 <h3 className="font-semibold text-primary mb-2">Écrivez-nous</h3>
-                <p className="text-muted-foreground">devis@groupesini.fr</p>
+                <p className="text-muted-foreground">contact@groupesini.com</p>
                 <p className="text-sm text-muted-foreground">Réponse sous 24h</p>
               </CardContent>
             </Card>

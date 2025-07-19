@@ -1,13 +1,13 @@
 import { Separator } from "@/components/ui/separator";
 import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import IcoImage from "@/assets/favicon.png";
-import { Link } from "react-router-dom";
 
 export function Footer() {
   const services = [
     "Nettoyage de bureaux",
     "Entretien d'immeubles",
     "Espaces verts",
+    "Assainissement",  
     "Services flexibles"
   ];
 
@@ -74,7 +74,7 @@ export function Footer() {
               {services.map((service, index) => (
                 <li key={index}>
                   <a
-                    href="#services"
+                    href="/services"
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
                     {service}
@@ -91,7 +91,7 @@ export function Footer() {
               {company.map((item, index) => (
                 <li key={index}>
                   <a
-                    href="#"
+                    href="/groupe"
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
                     {item}
@@ -108,7 +108,7 @@ export function Footer() {
             {support.map((item, index) => (
               <li key={index}>
                 <a
-                  href={item === "Devis gratuit" ? "/devis-gratuit" : "#"}
+                  href="/contact"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   {item}
@@ -119,11 +119,11 @@ export function Footer() {
           <div className="space-y-2">
             <div className="flex items-center space-x-2 text-primary-foreground/80">
               <Phone className="h-4 w-4" />
-              <span>01 23 45 67 89</span>
+              <span>06 28 25 60 85</span>
             </div>
             <div className="flex items-center space-x-2 text-primary-foreground/80">
               <Mail className="h-4 w-4" />
-              <span>contact@groupesini.fr</span>
+              <span>contact@groupesini.com</span>
             </div>
           </div>
         </div>

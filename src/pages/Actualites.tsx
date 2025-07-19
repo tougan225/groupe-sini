@@ -4,45 +4,25 @@ import { Badge } from "@/components/ui/badge";
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
 import { Calendar, ArrowLeft } from "lucide-react";
+import GImage from "@/assets/actualites.png";
 
 export default function Actualites() {
   const articles = [
     {
       id: 1,
-      title: "Nouvelle certification environnementale obtenue",
-      excerpt: "GROUPE SINI obtient la certification ISO 14001 pour son engagement environnemental exceptionnel.",
-      date: "15 Mars 2024",
-      category: "Environnement",
-      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop",
-      content: "Nous sommes fiers d'annoncer l'obtention de notre certification ISO 14001, témoignant de notre engagement constant pour la protection de l'environnement..."
+      title: "Faites dès maintenant nettoyez vos tissus",
+      excerpt: [ <b>Offrez une seconde jeunesse à votre canapé avec notre service de nettoyage professionnel ! Au fil du temps, il peut accumuler des taches, de la saleté et des odeurs sur votre canapé. C'est là que nous intervenons pour lui redonner son éclat d'origine. Pourquoi choisir notre service de nettoyage ? </b>,
+      "➡ Nettoyage en profondeur : Notre équipe de spécialistes utilise des techniques de nettoyage avancées pour éliminer efficacement la saleté, les taches et les allergènes de votre canapé, assurant une propreté en profondeur. ",
+      "➡ Élimination des odeurs : Nous ne nous contentons pas de nettoyer les taches visibles, mais nous nous attaquons également aux odeurs indésirables, laissant votre canapé frais et agréable. ",
+      "➡ Protection du tissu : Nous utilisons des produits de nettoyage qui préservent la texture et la couleur d'origine de votre canapé, tout en le protégeant contre de futurs dommages. ",
+      "➡ Service sur mesure : Chaque canapé est unique, c'est pourquoi nous adaptons notre service en fonction de vos besoins spécifiques, garantissant une satisfaction totale à chaque intervention. ",
+      <b>Contactez-nous dès maintenant pour réserver notre service de nettoyage de canapé et redécouvrez le plaisir de vous détendre dans un espace propre et revitalisé !"</b>],
+      date: "06 Mars 2024",
+      category: "Entretien",
+      image: GImage,
+      content: "Actus pour vos tissus"
     },
-    {
-      id: 2,
-      title: "Extension de nos services dans la région Île-de-France",
-      excerpt: "Découvrez nos nouveaux services disponibles dans toute la région parisienne.",
-      date: "8 Mars 2024",
-      category: "Expansion",
-      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=400&fit=crop",
-      content: "Grâce à la confiance de nos clients, nous étendons notre zone d'intervention à toute l'Île-de-France..."
-    },
-    {
-      id: 3,
-      title: "Nouveaux équipements écologiques",
-      excerpt: "Investissement dans du matériel de dernière génération respectueux de l'environnement.",
-      date: "1 Mars 2024",
-      category: "Innovation",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop",
-      content: "Nous continuons à investir dans des équipements innovants et écologiques pour améliorer la qualité de nos services..."
-    },
-    {
-      id: 4,
-      title: "Partenariat avec des fournisseurs locaux",
-      excerpt: "Renforcement de notre engagement local avec de nouveaux partenariats durables.",
-      date: "20 Février 2024",
-      category: "Partenariat",
-      image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=400&fit=crop",
-      content: "Notre nouvelle stratégie de partenariats locaux nous permet de soutenir l'économie régionale..."
-    }
+   
   ];
 
   const getCategoryColor = (category: string) => {
@@ -62,12 +42,6 @@ export default function Actualites() {
       {/* Hero Section */}
       <section className="pt-24 pb-12 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="flex items-center mb-6">
-            <Button variant="ghost" className="mr-4" onClick={() => window.history.back()}>
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Retour
-            </Button>
-          </div>
           <h1 className="text-4xl font-bold text-primary mb-4">Actualités</h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
             Suivez les dernières nouvelles de GROUPE SINI : nos innovations, 
@@ -105,21 +79,13 @@ export default function Actualites() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    {article.excerpt}
+                   {article.excerpt.map((line, index) => (
+                    <p key={index} className="text-gray-700 text-justify mb-1">{line}</p>
+                      ))}
                   </p>
-                  <Button variant="outline" className="hover:bg-accent hover:text-white transition-smooth">
-                    Lire la suite
-                  </Button>
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          {/* Load More */}
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="px-8">
-              Charger plus d'articles
-            </Button>
           </div>
         </div>
       </section>

@@ -6,16 +6,17 @@ import { DiscoverServicesSection } from "@/components/ui/discover-services-secti
 import { EnvironmentalSection } from "@/components/ui/environmental-section";
 import { ContactSection } from "@/components/ui/contact-section";
 import { Footer } from "@/components/ui/footer";
-
+import { Partenaires } from "@/components/ui/partenaires";
+//<DiscoverServicesSection />
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
       <AboutSection />
-      <DiscoverServicesSection />
       <ServicesSection />
       <EnvironmentalSection />
+      <Partenaires/>
       <ContactSection />
       <Footer />
     </div>

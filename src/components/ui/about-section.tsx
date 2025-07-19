@@ -55,10 +55,11 @@ export function AboutSection() {
                 </div>
               ))}
             </div>
-
-            <Button size="lg" className="bg-accent hover:bg-accent/90">
-              En savoir plus sur nous
-            </Button>
+            <a href="/about">
+              <Button size="lg" className="bg-accent hover:bg-accent/90">
+                En savoir plus sur nous
+              </Button>
+            </a>
           </div>
 
           {/* Features Grid */}
