@@ -9,7 +9,7 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postbuild": "cp src/_redirects dist/groupe-sini/_redirects"
+    "postbuild": "cp src/_redirects dist/_redirects"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
