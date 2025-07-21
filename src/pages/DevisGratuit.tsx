@@ -23,41 +23,35 @@ export default function DevisGratuit() {
 
   const services = [
     {
-      id: "nettoyage-bureaux",
-      name: "Nettoyage de bureaux",
-      description: "Entretien régulier de vos espaces de travail",
+      id: "nettoyage-professionnel",
+      name: "Nettoyage professionnel",
+      description: "Nettoyage complet de tous types d'espaces résidentiels et commerciaux, avec des méthodes efficaces et écologiques.",
       icon: "🏢"
-    },
-    {
-      id: "nettoyage-immeubles",
-      name: "Entretien d'immeubles",
-      description: "Maintenance complète de vos bâtiments",
-      icon: "🏬"
     },
     {
       id: "espaces-verts",
       name: "Espaces verts",
-      description: "Aménagement et entretien paysager",
+      description: "Entretien, tonte, taille et aménagement de vos espaces verts avec respect de l'environnement.",
       icon: "🌱"
     },
     {
-      id: "nettoyage-travaux",
-      name: "Nettoyage après travaux",
-      description: "Remise en état après chantier",
+      id: "gestion-dechets",
+      name: "Gestion des déchets",
+      description: "Collecte et évacuation de déchets verts, encombrants ou gravats pour garder vos espaces propres.",
+      icon: "🗑️"
+    },
+    {
+      id: "assainissement-non-collectif",
+      name: "Assainissement non collectif",
+      description: "Diagnostics, études de sol et contrôles pour vos installations d’assainissement non collectif.",
+      icon: "🚰"
+    },
+    {
+      id: "multi-services",
+      name: "Multi-services",
+      description: "Montage de meubles, petites réparations, changements de joints, filtres et ampoules selon vos besoins.",
       icon: "🔧"
-    },
-    {
-      id: "services-flexibles",
-      name: "Services flexibles",
-      description: "Solutions sur mesure adaptées",
-      icon: "⚡"
-    },
-    {
-    id: "assainissement",
-    name: "Assainissement",
-    description: "Pompage, curage et entretien des réseaux et fosses",
-    icon: "🚰"
-  }
+    }
   ];
 
   const handleServiceToggle = (serviceId: string) => {
@@ -268,7 +262,7 @@ export default function DevisGratuit() {
 
                   <div>
                     <label className="block text-sm font-medium mb-2">Téléphone *</label>
-                    <Input type="tel" placeholder="06 28 25 60 85" required />
+                    <Input type="tel" placeholder="07 52 28 71 14" required />
                   </div>
 
                   <div>
@@ -327,8 +321,8 @@ export default function DevisGratuit() {
               <CardContent className="p-6">
                 <Phone className="h-8 w-8 text-accent mx-auto mb-4" />
                 <h3 className="font-semibold text-primary mb-2">Appelez-nous</h3>
-                <p className="text-muted-foreground">06 28 25 60 85</p>
-                <p className="text-sm text-muted-foreground">Lun-Ven: 8h-18h</p>
+                <p className="text-muted-foreground">07 52 28 71 14</p>
+                <p className="text-sm text-muted-foreground">24h/24, 7j/7</p>
               </CardContent>
             </Card>
             

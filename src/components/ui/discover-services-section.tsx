@@ -121,7 +121,6 @@ export function DiscoverServicesSection() {
                   <h3 className="text-2xl font-bold">Pourquoi choisir GROUPE SINI ?</h3>
                 </div>
                 <p className="text-primary-foreground/90 text-lg mb-6">
-                  Plus de 5 ans d'expérience au service de la satisfaction client. 
                   Nous nous engageons à dépasser vos attentes avec des solutions innovantes et durables.
                 </p>
                 <div className="space-y-2">

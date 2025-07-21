@@ -6,6 +6,7 @@ import cleaningImage from "@/assets/service-cleaning.jpg";
 import landscapingImage from "@/assets/service-landscaping.jpg";
 import AssainissementImage from "@/assets/assainissement.png";
 import flexImage from "@/assets/service-flex.jpg";
+import DechetsImage from "@/assets/dechets.jpg";
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
 
@@ -13,30 +14,71 @@ export function Services() {
   const mainServices = [
     {
       title: "Nettoyage professionnel",
-      description: "Des bureaux aux espaces commerciaux, nous assurons un nettoyage irréprochable avec des produits écologiques de haute qualité.",
+      description: "Services de nettoyage professionnel pour tous types d'espaces commerciaux et résidentiels.",
       image: cleaningImage,
-      features: ["Bureaux et entreprises", "Copropriétés", "Commerces", "Après travaux"],
+      features: [
+        "Nettoyage de bureaux",
+        "Entretien d'immeubles",
+        "Nettoyage après travaux",
+        "Nettoyage extrême",
+        "Nettoyage haute pression",
+        "Nettoyage de vitres",
+        "Ménage à domicile",
+        "Nettoyage de tissus",
+        "Entretien de locaux",
+        "Nettoyage de copropriété",
+        "Entretien locatif"
+      ],
       highlight: "Jusqu'à 20% d'économies avec nos contrats annuels"
     },
     {
       title: "Espaces verts",
-      description: "Créez et maintenez des espaces verts exceptionnels avec notre expertise en aménagement paysager durable.",
+      description: "Entretien et aménagement de vos espaces verts avec une approche respectueuse de l'environnement.",
       image: landscapingImage,
-      features: ["Aménagement paysager", "Entretien jardins", "Élagage", "Arrosage automatique"],
+      features: [
+        "Tonte et entretien pelouse",
+        "Taille de haies et d'arbustes",
+        "Ramassage de feuilles",
+        "débroussaillage"
+      ],
       highlight: "Devis paysager gratuit avec visite sur site"
     },
     {
-      title: "Service d’assainissement",
-      description: "Interventions rapides et efficaces pour l’entretien, le nettoyage et le débouchage de vos canalisations.",
+      title: "Gestion des déchets",
+      description: "Nous assurons la collecte et l’évacuation de déchets non dangereux, déchets verts, encombrants ou gravats de chantier, pour garder vos espaces propres et dégagés en toute simplicité.",
+      image: DechetsImage,
+      features: [
+        "Collecte et enlèvement de déchets non dangereux",
+        "Collecte de déchets verts",
+        "Évacuation de déchets de chantier ou de locaux",
+        "débarras d'évacuation de déchets encombrants"
+      ],
+      highlight: "Devis gestion des déchets gratuit avec visite sur site"
+    },    
+    {
+      title: "Assainissement non collectif",
+      description: "Nous réalisons le diagnostic de vos installations, les études de sol et de faisabilité, ainsi que le contrôle des conceptions et des travaux. Bénéficiez d’un accompagnement complet pour un système conforme, efficace et durable.",
       image: AssainissementImage,
-      features: ["Pompage et curage", "Débouchage haute pression", "Inspection caméra", "Interventions d'urgence"],
+      features: [
+        "Réalisation de diagnostics de filières existant", 
+        "Études de faisabilité ou de sol pour la mise en place d’un ANC", 
+        "Contrôle de conception (études préalables pour le SPANC)",
+        "Contrôle de bonne exécution des travaux"
+      ],
       highlight: "Devis d’assainissement gratuit avec visite sur site"
     },
     {
-      title: "Services sur mesure",
-      description: "Solutions flexibles qui s'adaptent parfaitement à vos contraintes et à votre budget.",
+      title: "Multi services",
+      description: "Solutions sur mesure qui s'adaptent à vos besoins spécifiques et à votre planning.",
       image: flexImage,
-      features: ["Planning flexible", "Interventions d'urgence", "Services combinés", "Tarifs adaptés"],
+      features: [
+        "Réfection de joint",
+        "Montage de meuble",
+        "Réparation simple (poignée de serrure fuite d'eau légère)",
+        "changement de filtre de hotte",
+        "changement d'ampoule",
+        "changement de flexible de douche"
+      ],
       highlight: "Réactivité garantie sous 2h en urgence"
     }
   ];
@@ -128,8 +170,7 @@ export function Services() {
                   <Award className="h-8 w-8 text-accent mr-3" />
                   <h3 className="text-2xl font-bold">Pourquoi choisir GROUPE SINI ?</h3>
                 </div>
-                <p className="text-primary-foreground/90 text-lg mb-6">
-                  Plus de 5 ans d'expérience au service de la satisfaction client. 
+                <p className="text-primary-foreground/90 text-lg mb-6"> 
                   Nous nous engageons à dépasser vos attentes avec des solutions innovantes et durables.
                 </p>
                 <div className="space-y-2">

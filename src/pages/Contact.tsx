@@ -11,7 +11,7 @@ export function Contact() {
     {
       icon: <Phone className="h-5 w-5" />,
       title: "Téléphone",
-      details: ["06 28 25 60 85"]
+      details: ["07 52 28 71 14"]
     },
     {
       icon: <Mail className="h-5 w-5" />,
@@ -26,7 +26,7 @@ export function Contact() {
     {
       icon: <Clock className="h-5 w-5" />,
       title: "Horaires",
-      details: ["Lun-Ven: 8h-18h", "Sam: 8h-12h"]
+      details: ["24h/24", "7j/7"]
     }
   ];
 

@@ -14,9 +14,9 @@ export function Navigation({ className }: NavigationProps) {
 
   const navItems = [
     { label: "À propos", href: "/about" },
-     { label: "Le Groupe", href: "/groupe" },
+    { label: "Le Groupe", href: "/groupe" },
     { label: "Services", href: "/services" },
-    { label: "Actualités", href: "/actualites" },
+    { label: "Nos Interventions", href: "/interventions" },
     { label: "Contact", href: "/contact" },
   ];
 

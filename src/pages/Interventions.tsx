@@ -6,7 +6,7 @@ import { Footer } from "@/components/ui/footer";
 import { Calendar, ArrowLeft } from "lucide-react";
 import GImage from "@/assets/actualites.png";
 
-export default function Actualites() {
+export default function Interventions() {
   const articles = [
     {
       id: 1,
@@ -42,10 +42,9 @@ export default function Actualites() {
       {/* Hero Section */}
       <section className="pt-24 pb-12 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-primary mb-4">Actualités</h1>
+          <h1 className="text-4xl font-bold text-primary mb-4">Nos Interventions</h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Suivez les dernières nouvelles de GROUPE SINI : nos innovations, 
-            certifications, et engagements pour un service toujours plus performant.
+            Suivez les dernières nouvelles de GROUPE SINI : nos engagements pour un service toujours plus performant.
           </p>
         </div>
       </section>

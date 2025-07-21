@@ -8,13 +8,13 @@ export function Footer() {
     "Entretien d'immeubles",
     "Espaces verts",
     "Assainissement",  
-    "Services flexibles"
+    "Gestion des déchets",
+    "Multi services",
   ];
 
   const company = [
     "À propos",
     "Notre équipe",
-    "Nos certifications",
     "Carrières"
   ];
 
@@ -108,7 +108,7 @@ export function Footer() {
             {support.map((item, index) => (
               <li key={index}>
                 <a
-                  href="/contact"
+                  href={item === "Zone d'intervention" ? "/zone-intervention" : "/contact"}
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   {item}
@@ -119,7 +119,7 @@ export function Footer() {
           <div className="space-y-2">
             <div className="flex items-center space-x-2 text-primary-foreground/80">
               <Phone className="h-4 w-4" />
-              <span>06 28 25 60 85</span>
+              <span>07 52 28 71 14</span>
             </div>
             <div className="flex items-center space-x-2 text-primary-foreground/80">
               <Mail className="h-4 w-4" />

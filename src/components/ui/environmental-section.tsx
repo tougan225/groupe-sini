@@ -55,12 +55,6 @@ export function EnvironmentalSection() {
             </div>
           ))}
         </div>
-
-        <div hidden className="text-center">
-          <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white">
-            Découvrir nos certifications
-          </Button>
-        </div>
       </div>
     </section>
   );
