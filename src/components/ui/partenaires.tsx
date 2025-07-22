@@ -28,8 +28,8 @@ export function Partenaires() {
             Nos partenaires
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Nous croyons que l'excellence passe par des collaborations solides.
-            Ensemble, nous œuvrons pour offrir des services de nettoyage durables et responsables.
+            Fort de plus de <b>1 000 interventions réussies,</b> nous savons que l’excellence se construit grâce à des partenariats solides.
+            Ensemble, nous agissons chaque jour pour proposer des services de nettoyage responsables, durables et à la hauteur des attentes de nos clients.
           </p>
         </div>
 
